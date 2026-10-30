@@ -1,0 +1,4 @@
+# Adicione as dependências necessárias aqui
+# Por exemplo:
+# numpy
+# pandas

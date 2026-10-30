@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  terraria-chest-hunter:
+    build: .
+    volumes:
+      - .:/app
+      - ./Terraria/Worlds:/app/Terraria/Worlds
+    working_dir: /app
+    command: python main.py
