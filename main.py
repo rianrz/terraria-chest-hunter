@@ -14,4 +14,8 @@ def list_chests(world_path):
 if __name__ == '__main__':
     world_path = sys.argv[1]
     chests = list_chests(world_path)
-    print(chests)
+    
+    for chest in chests:
+        print(f"Baú em coordenadas ({chest.x}, {chest.y})")
+        for item in chest.items:
+            print(f"  Item: {item.name}, Quantidade: {item.quantity}")
