@@ -1,9 +1,9 @@
 import sys
-import lizahrd
+import lihzahrd
 
 def list_chests(world_path):
     # Carrega o mundo do Terraria
-    world = lizahrd.World(world_path)
+    world = lihzahrd.World(world_path)
     
     # Filtra os objetos que são baús
     chests = [obj for obj in world.objects if obj.type == 'Chest']
