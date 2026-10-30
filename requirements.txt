@@ -1,4 +1,2 @@
 # Adicione as dependências necessárias aqui
-# Por exemplo:
-# numpy
-# pandas
+git+https://github.com/Steffo99/Lihzahrd.git
