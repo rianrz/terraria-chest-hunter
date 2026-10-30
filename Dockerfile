@@ -4,6 +4,9 @@ FROM python:3.12-slim
 # Define o diretório de trabalho
 WORKDIR /app
 
+# Instala as dependências do sistema
+RUN apt-get update && apt-get install -y python3-tk tk-dev
+
 # Copia o requirements.txt para o diretório de trabalho
 COPY requirements.txt .
 
